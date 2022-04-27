@@ -1,12 +1,7 @@
 package study_0424;
 
-//import java.io.BufferedReader;
-//import java.io.BufferedWriter;
 import java.io.IOException;
-//import java.io.InputStreamReader;
-//import java.io.OutputStreamWriter;
 import java.util.Scanner;
-//import java.util.StringTokenizer;
 
 /*	네오는 평소 프로도가 비상금을 숨겨놓는 장소를 알려줄 비밀지도를 손에 넣었다. 
 	그런데 이 비밀지도는 숫자로 암호화되어 있어 위치를 확인하기 위해서는 암호를 해독해야 한다.
@@ -38,20 +33,13 @@ import java.util.Scanner;
 public class SecretMap {
 	public static void main(String[] args) throws IOException{
 		Scanner sc = new Scanner(System.in);
-//		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-//		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		System.out.print("정수 입력 >> ");
 		int n = sc.nextInt();
-//		int n = Integer.parseInt(br.readLine());
 		String[] answer = new String[n];
 		int[] arr1 = new int [n];
 		int[] arr2 = new int [n];
 		
 		for(int i = 0; i < n; i++) {
-//			StringTokenizer st = new StringTokenizer(br.readLine()," ");
-//			arr1[i] = Integer.parseInt(st.nextToken());
-//			arr2[i] = Integer.parseInt(st.nextToken());
-//			arr1[i] = sc.nextInt();
 			System.out.print("arr1 "+ (i+1) +"번째 입력 >> ");
 			arr1[i] = sc.nextInt();
 			
@@ -61,10 +49,6 @@ public class SecretMap {
 			// 10진수 -> 2진수 변환
 			String binary_num1 = Integer.toBinaryString(arr1[i]);
 			String binary_num2 = Integer.toBinaryString(arr2[i]);
-//			System.out.println(binary_num1);
-//			System.out.println(binary_num2);
-//			System.out.println(binary_number1.length());
-//			System.out.println(binary_number2.length());
 			int len1 = binary_num1.length();
 			int len2 = binary_num2.length();
 			
@@ -104,51 +88,5 @@ public class SecretMap {
 		}
 		sc.close();
 		
-//		int[] arr1 = new int [n];
-//		int[] arr2 = new int [n];
-//		
-//		for(int i = 0; i < n; i++) {
-//			arr1[i] = sc.nextInt();				// 배열 값 입력 받기
-//		}
-//		
-//		for(int i = 0; i < n; i++) {
-//			arr2[i] = sc.nextInt();				// 배열 값 입력 받기
-//		}
-//		
-//		
-		
-//		String b = "";
-//		String[][] a = {};
-//		int num = 14;
-//		for(int i = 0; i < n; i++) {
-//			while(arr1[i] > 0) {
-//				b = arr1[i] % 2 + b;
-//				arr1[i] /= 2;
-//				for(int j = 0; j < i+1; j++) {
-//					a[i][j] = b;
-//					System.out.println(a[i][j]);
-//				}
-//			}
-//		}
-		
-//		 String[][] b = {};
-////		 int number = 123;
-//		 for(int i = 0; i < arr1.length; i++) {
-//			 for(int j = 0; j < arr1.length; j++) {
-//				 String bi ="";
-//				 while(arr1[i]>0) {
-//					 bi = arr1[i] % 2 + bi;
-//					 arr1[i] /=2;
-//				 }
-//				 b[i][j] = bi;
-//				 System.out.println(b[i][j]);
-//			 }
-//			 b[i] = bi;
-//			 System.out.println(b[i]);
-		
-//		for(int i = 0; i < n; i++) {
-//
-//		}
-
 	}
 }
