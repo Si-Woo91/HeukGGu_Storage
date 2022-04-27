@@ -5,7 +5,6 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
-//import java.util.Scanner;
 import java.util.Stack;
 
 /*
@@ -46,17 +45,12 @@ public class Study_m {
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));		
-//		Scanner sc = new Scanner(System.in);
 		String bracket = ""; 
 		
 		bracket = br.readLine();
-//		bracket = sc.nextLine();
-//		Stack<String> str = new Stack<String>(); 
 		Stack<Character> str = new Stack<Character>(); 
 		
 		for(int i = 0; i < bracket.length(); i++) {
-//			System.out.println(str.push(bracket.charAt(i)));
-//			str.push(bracket.charAt(i));
 			
 			/*
 			 * peek() : 스택 탑에 있는 원소를 반환
@@ -72,19 +66,10 @@ public class Study_m {
 			try {
 				if(bracket.charAt(i) == ')' && str.peek() == '(' ) {
 					str.pop();
-//				if(bracket.charAt(i) == ')') {
-//					str.push(bracket.charAt(i));
-//				}
 				}else if(bracket.charAt(i) == '}' && str.peek() == '{') {
 					str.pop();
-//				if(bracket.charAt(i) == '}') {
-//					str.push(bracket.charAt(i));
-//				}
 				}else if(bracket.charAt(i) == ']' && str.peek() == '[') {
 					str.pop();
-//				if(bracket.charAt(i) == ']') {
-//					str.push(bracket.charAt(i));
-//				}
 				}else {
 					str.push(bracket.charAt(i));
 				}
@@ -95,7 +80,6 @@ public class Study_m {
 		}
 		
 		boolean result = false;
-//		String result = "";
 		
 		if(str.empty()) {
 			result = true;
