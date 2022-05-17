@@ -26,8 +26,8 @@ public class Study_0516 {
 		int X = Integer.parseInt(st.nextToken());
 		int Y = Integer.parseInt(st.nextToken());
 		
-		sum = Integer.parseInt(Rev(X))+Integer.parseInt(Rev(Y));
-		System.out.println(Integer.parseInt(Rev(sum)));
+		sum = Integer.parseInt(Rev(X))+Integer.parseInt(Rev(Y));	// 각각 뒤집어서 더해준다.
+		System.out.println(Integer.parseInt(Rev(sum)));				// 더해준 값을 뒤집어 준다.
 	}
 	
 	// 역순으로 만들어주는 메소드
@@ -35,10 +35,10 @@ public class Study_0516 {
 		StringBuilder sb = new StringBuilder();	
 		String a;
 		// x가 0보다 크면 x를 10으로 나눴을때의 나머지를 받아온다.
-		while(x > 0) {					
+		while(x > 0) {			
 			a = (x % 10) + "";				// 일의 자리수 부터 차례로 받아서 저장
 			x = x / 10;						// 일의 자리수를 제외하기 위해
-			sb.append(a);					// 받은 숫자를 차례로 이어준다.
+			sb.append(a); 					// 받은 숫자를 차례로 이어준다.
 		}
 		return sb.toString();
 	}
