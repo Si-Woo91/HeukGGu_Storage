@@ -24,26 +24,24 @@ N개의 수가 주어졌을 때, 이를 오름차순으로 정렬하는 프로�
 public class Day54 {
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-//		List<Integer> list = new ArrayList<>();
-//		
-//		// 리스트 풀이법
-//		
-//		int N = Integer.parseInt(br.readLine());
-//		
-//		for(int i = 0; i < N; i++) {
-//			list.add(Integer.parseInt(br.readLine()));
-//		}
-//		
-//		Collections.sort(list);
-//		StringBuilder sb = new StringBuilder();
-//		
-//		for(int i = 0; i < N; i++) {
-//			sb.append(list.get(i) + "\n");
-//		}
-//		
-//		System.out.println(sb.toString());
-//		
-//		br.close();
+		// 리스트 풀이법
+		List<Integer> list = new ArrayList<>();
+		int N = Integer.parseInt(br.readLine());
+		
+		for(int i = 0; i < N; i++) {
+			list.add(Integer.parseInt(br.readLine()));
+		}
+		
+		Collections.sort(list);
+		StringBuilder sb = new StringBuilder();
+		
+		for(int i = 0; i < N; i++) {
+			sb.append(list.get(i) + "\n");
+		}
+		
+		System.out.println(sb.toString());
+		
+		br.close();
 		
 		////////////////////////////////////////////////////////////////////////
 		
